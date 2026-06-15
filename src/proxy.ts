@@ -6,7 +6,7 @@ export async function proxy(req: NextRequest) {
   console.log("token from middleware", jwtToken);
 
   if (jwtToken == null) {
-    return NextResponse.redirect("https://e-commerce-abdel-hamed.vercel.app/Login");
+return NextResponse.redirect("https://project-e-commerce-master-ahmed-ramadan-s-projects.vercel.app/Login");
   }
   return NextResponse.next();
 }
